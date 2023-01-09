@@ -1,0 +1,798 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --primary1: #1e1e1c;
+  --primary2: #3a3a3b;
+  --primary3: #4e4e4f;
+  --primary4: #626263;
+  --primary5: #767676;
+  --primary6: rgba(175, 174, 174, 0.1);
+
+  /* Secondary */
+  --secondary1: #538059;
+  --secondary2: #75997a;
+  --secondary3: #98b39b;
+  --secondary4: #baccbd;
+  --secondary5: #dde6de;
+
+  /* Accent */
+  --accent1: #ef6817;
+  --accent2: #f28645;
+  --accent3: #f5a474;
+  --accent4: #f9c3a2;
+  --accent5: #fce1d1;
+
+  /* Success */
+  --success1: #006f37;
+  --success2: #338c5f;
+  --success3: #66a987;
+  --success4: #99c5af;
+  --success5: #cce2d7;
+
+  /* Warning */
+  --warning1: #f6de16;
+  --warning2: #f8e545;
+  --warning3: #faeb73;
+  --warning4: #fbf2a2;
+
+  /* Error */
+  --error1: #f92d00;
+  --error2: #fa5733;
+  --error3: #fb8166;
+  --error4: #fdab99;
+  --error5: #fed5cc;
+
+  /* Color Select */
+  --background: #1e1e1c;
+  --title: #ffffff;
+  --paragraf: #767676;
+  --primary-button: #538059;
+
+  /* PC1*/
+  /* font-hero*/
+  --hero-font-size1: 2em;
+  --hero-font-style1: normal;
+  --hero-font-weigth1: 700;
+  --hero-line-heigt1: 130%;
+  --hero-letter-spacing1: 0.005em;
+
+  /* font-title */
+  --font-size-title1: 2.375em;
+
+  /* font-service */
+  --font-size-title1: 2.375em;
+  --service-font-size1: 1.25em;
+
+  /* font-client */
+  --client-font-size1: 1.625em;
+  --client-font-weight1: 400;
+  --client-line-height1: 140%;
+  --review-font-size1: 1.125em;
+
+  /* font-footer */
+  --footer-font-size-title1: 1.25em;
+  --footer-font-size-subtitle1: 1.125em;
+  --made-font-size1: 1.25em;
+
+  /*TAB2*/
+  /* font-hero */
+  --hero-font-size2: 2.8125em;
+  --hero-font-style2: normal;
+  --hero-font-weigth2: 700;
+  --hero-line-heigt2: 54.6px;
+  --hero-letter-spacing2: 0.05%;
+
+  /* font-title */
+  --font-size-title2: 2em;
+
+  /* font-service */
+  --font-size-title2: 1.5em;
+  --service-font-size2: 1.125em;
+
+  /* font-client */
+  --client-font-size2: 32px;
+  --client-font-weight2: 700;
+  --client-line-height2: 44.8px;
+  --review-font-size2: 1.5em;
+
+  /* font-footer */
+  --footer-font-size-title2: 1.25em;
+  --footer-font-size-subtitle2: 1.125em;
+  --made-font-size2: 1.25em;
+
+  /*MOBILE3*/
+  /* font-hero */
+  --hero-font-size3: 1.8125em;
+  --hero-font-style3: normal;
+  --hero-font-weigth3: 700;
+  --hero-line-heigt3: 33.6px;
+  --hero-letter-spacing3: 0.05%;
+
+  /* font-title */
+  --font-size-title3: 1.25em;
+
+  /* font-service */
+  --font-size-title3: 1.125em;
+  --service-font-size3: 0.875em;
+
+  /* font-client */
+  --client-font-size3: 1.25em;
+  --client-font-weight3: 700;
+  --client-line-height3: 150%;
+  --review-font-size3: 1.125em;
+
+  /* font-footer */
+  --footer-font-size-title3: 1.25em;
+  --footer-font-size-subtitle3: 1.125em;
+  --made-font-size3: 1.25em;
+}
+
+* {
+  font-family: "poppins";
+}
+
+body {
+  margin: 30px 0 0 0;
+  background-color: var(--primary1);
+  color: #515348;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.button,
+.button *,
+button,
+button * {
+  white-space: nowrap;
+}
+
+#logo {
+  margin: 0 0 30px 0;
+  background-color: #fff;
+}
+
+#logo img {
+  border: 0;
+}
+
+.login #logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.login input[type="Submit"] {
+  width: 120px;
+  margin: 20px 0 20px 0;
+}
+
+a:hover.button,
+table a:hover {
+  text-decoration: none;
+}
+
+.top-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 100%;
+  height: 30px;
+  line-height: 26px;
+  background-color: #383838;
+  padding: 2px 0 2px 0;
+  text-align: right;
+  color: #e0fffa;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.top-menu a {
+  color: #e0fffa;
+  cursor: pointer;
+}
+
+.top-menu a:hover {
+  text-decoration: underline;
+}
+
+.top-menu .row {
+  padding: 0 15px 0 15px;
+  min-width: 800px;
+}
+
+.top-menu-spacer {
+  height: 30px;
+}
+
+.nav {
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+
+.navigation-button-right {
+  float: right;
+}
+
+.navigation-button-right a,
+.navigation-button-right input {
+  float: left;
+}
+
+#newfolder_button {
+  width: 350px;
+  margin: -56px 0 0 0;
+}
+
+#newfolder_button ul li {
+  min-height: 30px;
+}
+
+button.upload-done {
+  width: 120px;
+}
+
+.navigation-button-right input {
+  width: 56%;
+  height: 37px;
+  margin: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.navigation-button-right div.radius {
+  border-radius: 0 3px 3px 0;
+  width: 44%;
+}
+
+form#fileset {
+  margin: 12px 0 0 0;
+}
+
+#fileset td {
+  white-space: nowrap;
+}
+
+table {
+  width: 100%;
+  white-space: nowrap;
+}
+
+table tbody {
+  min-height: 50px;
+  overflow: hidden;
+}
+
+table tbody tr td {
+  border: medium none;
+  color: #373737;
+  padding: 4px 5px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+table .chkboxes {
+  min-width: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+a.back {
+  background: url("img/icons30px.png") no-repeat scroll -30px -360px transparent;
+  width: 30px;
+  height: 30px;
+}
+
+table .actions {
+  width: 10%;
+}
+table .actions button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+table .actions button:hover {
+  opacity: 0.4;
+}
+
+table .actions button.action-info {
+  background: url("img/icons30px.png") no-repeat scroll -120px -150px transparent;
+  display: block;
+}
+
+table .actions button.action-delete-account,
+table .actions button.action-account {
+  float: right;
+}
+
+table .actions button.action-account {
+  background: url("img/icons30px.png") no-repeat scroll -120px -150px transparent;
+  display: block;
+}
+
+table .actions button.action-delete-account {
+  background: url("img/icons30px.png") no-repeat scroll -150px -240px transparent;
+  display: block;
+}
+
+table tr.directory a {
+  color: #373737;
+  font-weight: bold;
+}
+
+table td.filename a {
+  color: #373737;
+}
+
+tr.file td.filename a {
+  max-width: 560px;
+}
+
+table td.filename a.buffer-cut {
+  color: #999999;
+}
+
+table td.filename a.buffer-copy {
+  color: #000080;
+}
+
+.file-list a {
+  display: block;
+  color: #373737;
+}
+
+table .filename {
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+}
+
+table .filesize {
+  text-align: right;
+  min-width: 70px;
+}
+
+table .username {
+  width: 150px;
+  max-width: 150px;
+  min-width: 150px;
+  overflow: hidden;
+}
+
+table .homedir {
+  max-width: 230px;
+  overflow: hidden;
+}
+
+table .permissions {
+  width: 50px;
+  min-width: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+table .accounts {
+  width: 70px;
+}
+
+.bottom-actions {
+  margin: 0 0 10px 0;
+  height: 37px;
+}
+
+.bottom-actions button {
+  width: auto;
+  display: inline;
+  padding: 10px 20px 10px 20px;
+}
+
+button.select-button {
+  width: 130px;
+  margin: 0 10px 0 0;
+}
+div#content {
+  padding: 20px 30px 20px 30px;
+  color: #515348;
+  font-size: 76%;
+  line-height: 1.6em;
+  height: 1%;
+  background: #fff;
+  width: 100%;
+}
+
+.reveal-modal {
+  padding-top: 40px;
+}
+
+textarea#file-content {
+  max-height: 400px;
+  resize: none;
+}
+
+#big_modal {
+  top: 40px;
+}
+
+.modal-descr {
+  margin: 0 0 20px 0;
+}
+
+.modal-content {
+  margin: 20px 0 30px 0;
+}
+
+.modal-buttons button {
+  margin: 0 0 0 5px;
+}
+
+table[role="presentation"] {
+  width: 100%;
+  display: block;
+  min-height: 40px;
+}
+
+.rename_content {
+  margin: 0 0 20px 0;
+}
+
+.close-reveal-modal {
+  background: url("img/icons30px.png") no-repeat scroll -150px -240px transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.close-reveal-modal:hover {
+  opacity: 0.4;
+}
+
+div#top-panel {
+  height: 0px;
+  margin: 20px 0 0 0;
+  overflow: hidden;
+}
+
+.small-auth-menu {
+  float: right;
+  font-weight: bold;
+}
+
+#close-top-panel {
+  display: none;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+}
+
+tbody.files .name {
+  width: 40%;
+  max-width: 200px;
+  overflow: hidden;
+  padding: 0 0 0 10px;
+}
+
+tbody.files .progress-col,
+tbody.files .error {
+  width: 100%;
+}
+
+div.progress {
+  width: 100%;
+}
+
+.tbody.files {
+  width: 100%;
+}
+
+.template-upload span.ok {
+  background: url("img/icons30px.png") no-repeat scroll -180px -240px transparent;
+  border: 0 none;
+  float: right;
+  height: 30px;
+  overflow: visible;
+  width: 30px;
+}
+
+.template-upload button {
+  background: url("img/icons30px.png") no-repeat scroll -150px -240px transparent;
+  border: 0 none;
+  cursor: pointer;
+  float: right;
+  height: 30px;
+  width: 30px;
+  margin: 2px 0 0 0;
+}
+
+.template-upload button:hover {
+  opacity: 0.4;
+}
+
+div.error {
+  margin: 1em 0;
+  background: #a62b25;
+  border-top: 2px solid #db6e3c;
+  border-bottom: 2px solid #db6e3c;
+  padding: 5px 10px;
+  color: #f2dec4;
+  color: #fff;
+  font-weight: bold;
+}
+
+.login div#wrapper {
+  width: 420px;
+}
+
+.login div#content {
+  overflow: hidden;
+}
+
+.main div#wrapper {
+  min-width: 800px;
+}
+
+.login div#topcorners {
+  width: 420px;
+}
+
+.login div#bottomcorners {
+  width: 420px;
+}
+
+.login div#header h1 a {
+  width: 360px; /* 420 - 30 - 30 */
+}
+
+div#wrapper {
+  text-align: left;
+  margin: 0 auto;
+}
+
+div#header {
+  margin-bottom: 20px;
+  padding: 30px 0 0 0;
+  color: #515348;
+}
+
+div#header h1 {
+  margin: 0 30px;
+}
+
+div#content {
+  padding: 15px 30px 10px 30px;
+}
+
+.login div#content input.inputtext {
+  color: #515348;
+  height: 50px;
+  padding: 10px;
+  font-size: 130%;
+}
+
+.login input[type="Submit"] {
+  float: right;
+}
+
+#topcorners {
+  background: #fff;
+  height: 10px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-border-radius: 8px 8px 0px 0px;
+  -moz-border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 8px 0px 0px;
+  behavior: url(/PIE.htc);
+}
+
+#bottomcorners {
+  background: #fff;
+  height: 10px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-border-radius: 0px 0px 8px 8px;
+  -moz-border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 8px 8px;
+  behavior: url(/PIE.htc);
+}
+
+.directory-tree {
+  background: url("img/icons30px.png") no-repeat scroll -90px -120px transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: right;
+  margin: 0 8px 0 6px;
+}
+
+.directory-tree:hover {
+  opacity: 0.4;
+}
+
+.view-style {
+  background: url("img/icons30px.png") no-repeat scroll -120px -300px transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: right;
+  margin: 0 0px 0 6px;
+}
+
+.view-style:hover {
+  opacity: 0.4;
+}
+
+.filter-field {
+  float: right;
+  width: 140px;
+  height: 30px;
+}
+
+.odd {
+  background: none repeat scroll 0 0 #ffffff !important;
+}
+
+.even {
+  background: none repeat scroll 0 0 #f9f9f9 !important;
+}
+
+.image-preview {
+  width: 80px;
+  /*height: 50px;*/
+  margin-right: 20px;
+  border: 0;
+  position: relative;
+  bottom: -8px;
+}
+
+.image-size {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: right;
+  margin: 0 0px 0 6px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.image-size.increase {
+  background: url("img/icons30px.png") no-repeat scroll -120px 0px transparent;
+}
+
+.image-size.decrease {
+  background: url("img/icons30px.png") no-repeat scroll -90px 0px transparent;
+}
+
+.image-size:hover {
+  opacity: 0.4;
+}
+
+.filter-field .postfix {
+  font-size: 85%;
+  background: url("img/icons30px.png") no-repeat scroll -60px -240px transparent;
+}
+
+#dir-links {
+  height: 300px;
+  overflow: scroll;
+}
+
+#text-search {
+  width: 200px;
+  float: left;
+  height: 37px;
+}
+
+.text-search-box {
+  float: right;
+}
+
+.text-search-box .search-img {
+  background: url("img/icons30px.png") no-repeat scroll -60px -240px transparent;
+  width: 30px;
+  height: 30px;
+  margin: 3px 10px 0 0;
+  display: block;
+  float: left;
+}
+
+#dir-links li[clink] {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#dir-links li[isfile] {
+  cursor: default;
+  font-weight: normal;
+}
+
+#dir-links li {
+  list-style-type: disc;
+}
+
+#dir-links {
+  padding: 5px;
+  background-color: White;
+  margin: 0;
+}
+#dir-links ul {
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+#dir-links li a {
+  font-family: Arial;
+  text-decoration: none;
+  color: black;
+}
+#dir-links li a:hover {
+  color: blue;
+}
+#dir-links li {
+  list-style: none;
+  background-image: url("img/dotted.gif");
+  background-repeat: repeat-y;
+  padding: 2px 0 2px 20px;
+  text-indent: -19px;
+  background-position: 9px 0;
+}
+#dir-links li:before {
+  content: url("img/folder.gif") "  ";
+}
+#dir-links li[isfile]:before {
+  content: url("img/page.gif") "  ";
+}
+#dir-links li {
+  list-style: none;
+  background-image: url("img/dotted.gif");
+  background-repeat: repeat-y;
+  padding: 2px 0 2px 20px;
+  text-indent: -19px;
+  background-position: 9px 0;
+}
+#dir-links li:last-child {
+  background-repeat: no-repeat;
+}
+
+div.breadcrumbs {
+  margin: 0 8px 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  float: left;
+  color: #666666;
+}
+
+div.breadcrumbs a {
+  color: #666666;
+}
+
+.version-info {
+  text-align: center;
+  margin: 0;
+  float: left;
+  cursor: pointer;
+}
+
+#footer {
+  margin: 50px 0 0 0;
+  height: 30px;
+}
+
+html body.main div.top-menu div.row a.version-info {
+  display: none !important;
+}
