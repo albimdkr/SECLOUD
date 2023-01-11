@@ -211,7 +211,7 @@ $(document).ready(function() {
 
     // show tree
     $('.directory-tree').click(function(){
-    	showDirectoryTree('<?php echo lang::get("Folder Structure")?>', '/?tree=cd');
+    	showDirectoryTree(("Folder Structure"), '../?tree=cd');
     });
     
     // toggle selection
@@ -267,7 +267,7 @@ $(document).ready(function() {
 
     	submitAction('paste', false);
 
-       	$('#modal').html('<p class="lead"><?php echo lang::get("Please wait...")?></p>');
+       	$('#modal').html('<p class="lead"><?php echo lang::get("Tunggu sebentar yah ....")?></p>');
        	$('#modal').reveal({
         	     animation: 'none', //fade, fadeAndPop, none
         	     animationspeed: 0 //how fast animations are

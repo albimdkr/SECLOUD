@@ -43,4 +43,15 @@
 	<link rel="stylesheet" href="./include/views/style_ie7fix.css" />
 	<![endif]-->
 
+	<!-- <link rel="stylesheet" type="text/css" href="./include/blueimp/css/style-1.css" /> -->
+
+	<link rel="stylesheet" type="text/css" href="./include/blueimp/css/swiper-bundle.min.css" />
+	
+	<script src="./include/blueimp/js/swiper-bundle.min.js"></script>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+
+	<!-- <script src="./include/blueimp/js/script.js"></script> -->
+
+
 </head>		

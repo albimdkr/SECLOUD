@@ -211,3 +211,76 @@
 <div id="big_modal" class="reveal-modal large"></div>
 
 <?php gator::display("main_js.php")?>
+
+
+    <!-- section client -->
+    <section class="container-client" id="anggota">
+      <!-- new : mySwiper -->
+      <div class="client mySwiper">
+        <!-- new : swiper-wrapper -->
+        <h2 class="title-client">ANGGOTA KELOMPOK 8</h2>
+        <div class="client-content swiper-wrapper">
+          <!-- new : swiper-slide -->
+          <div class="slide swiper-slide">
+            <img src="./include/views/img/client1.png" alt="" class="img-client" />
+            <!-- <p>very exellent, the service its so fast, fun and good for customer. You must try.</p> -->
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="details">
+              <span class="name">Annisa Qolbiah</span>
+              <span class="job">Backend Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./include/views/img/albi.png" alt="" class="img-client" />
+            <!-- <p>very exellent, the service its so fast, fun and good for customer. You must try.</p> -->
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="details">
+              <span class="name">Albi Mudakar Nasyabi</span>
+              <span class="job">Frontend Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./include/views/img/client1.png" alt="" class="img-client" />
+            <!-- <p>good and very fast the respon</p> -->
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="details">
+              <span class="name">Dea</span>
+              <span class="job">Report Documentation</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./include/views/img/client1.png" alt="" class="img-client" />
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas, cupiditate similique veniam quaerat incidunt doloribus! Magnam ab et labore.</p> -->
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+            <div class="details">
+              <span class="name">Adrian Fajri</span>
+              <span class="job">Research Asset</span>
+            </div>
+          </div>
+          <!-- End slider -->
+        </div>
+        <!-- new : 3 -->
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- end section client -->
+
+    <script>
+      // Swipper
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        // spaceBetween: 30,
+        grabCursor: true,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
