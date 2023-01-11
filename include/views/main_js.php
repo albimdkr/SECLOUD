@@ -61,8 +61,8 @@ $(document).ready(function() {
     // Initialize the jQuery File Upload widget:
     $('#fileupload').fileupload();
     	
-    $('#fileupload').fileupload('option', {
-        url: '<?php echo gatorconf::get('base_url')?>/?upload=1',
+    $('#fileupload').fileupload('option', { 
+        url:'./?upload=1',
         maxFileSize: <?php echo gatorconf::get('max_filesize')?>,
         maxNumberOfFiles: <?php echo gatorconf::get('max_files')?>,
         downloadTemplateId: false,

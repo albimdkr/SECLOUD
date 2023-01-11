@@ -21,7 +21,7 @@
             'jquery',
             'tmpl',
             'load-image',
-            './jquery.fileupload-fp'
+            '/../jquery.fileupload-fp'
         ], factory);
     } else {
         // Browser globals:
