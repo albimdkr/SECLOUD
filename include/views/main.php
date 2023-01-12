@@ -1,5 +1,7 @@
 <body class="main">
 
+
+
 <!-- prepare upload templates -->
 <script id="template-upload">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
@@ -31,10 +33,17 @@
 </script>
 <!--<![endif]-->
 
+
+
 <?php if(gatorconf::get('use_auth') == true && gatorconf::get('show_top_auth_bar') == true && $_SESSION['simple_auth']['username'] != 'guest'):?>
 <div class="top-menu">
 <div class="row">
 <a class="version-info"><?php echo lang::get("FileGator")?></a>
+
+
+
+
+
 
  <?php if(gatorconf::get('allow_change_password')):?>
  	<a class="username-edit"><?php echo $_SESSION['simple_auth']['username']?></a>
@@ -44,7 +53,22 @@
  | <a href="?logout=1"><?php echo lang::get("Sign Out")?></a>
 </div>
 </div>
-<div class="top-menu-spacer"></div>
+<div class="top-menu-spacer">
+    <nav>
+      <a href="#header" class="logo"> <img src="./asset/img/sttbwhite.png" alt="logo" class="logo" /></a>
+      <ul>
+        <li><a class="btn active" href="#tentang">Generator</a></li>
+        <li><a href="#anggota">Anggota</a></li>
+        <li><a href="#alur">Cloud</a></li>
+      </ul>
+      <label for="check" class="check">
+        <input type="checkbox" id="check" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </nav>
+</div>
 <?php endif;?>
 
 <div id="wrapper" class="row">
@@ -222,7 +246,7 @@
         <div class="client-content swiper-wrapper">
           <!-- new : swiper-slide -->
           <div class="slide swiper-slide">
-            <img src="./include/views/img/client1.png" alt="" class="img-client" />
+            <img src="./include/views/img/anisa.png" alt="" class="img-client" />
             <!-- <p>very exellent, the service its so fast, fun and good for customer. You must try.</p> -->
             <i class="bx bxs-quote-alt-left quote-icon"></i>
             <div class="details">
@@ -240,7 +264,7 @@
             </div>
           </div>
           <div class="slide swiper-slide">
-            <img src="./include/views/img/client1.png" alt="" class="img-client" />
+            <img src="./include/views/img/dea.png" alt="" class="img-client" />
             <!-- <p>good and very fast the respon</p> -->
             <i class="bx bxs-quote-alt-left quote-icon"></i>
             <div class="details">
@@ -267,6 +291,17 @@
     </section>
     <!-- end section client -->
 
+
+    <!-- Cloud -->
+    <section class="container-socialmedia" id="alur">
+      <h2 class="socialmedia-title">CLOUD PROVIDER</h2>
+      <div class="social-media">
+        <img src="./include/views/img/alibaba-cloud.png" alt="alibaba cloud">
+      </div>
+    </section>
+    <!-- Cloud -->
+
+    <!-- Javascript -->
     <script>
       // Swipper
       var swiper = new Swiper(".mySwiper", {

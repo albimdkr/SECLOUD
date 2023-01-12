@@ -631,8 +631,7 @@ img:hover {
 
 /* End Gallery */
 
-/* Client */
-.container-client {
+Client .container-client {
   margin: 100px auto;
   display: flex;
   align-items: center;

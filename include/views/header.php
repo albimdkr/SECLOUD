@@ -3,8 +3,8 @@
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" >
 	<meta name="description" content="file gator" >
-	<title>KELOMPOK 8</title>
-	<link rel="shortcut icon" href="./include/views/img/favicon.ico" />
+	<title>KELOMPOK 8 | TIF RP 21 C</title>
+	<link rel="shortcut icon" href="./include/views/img/sttbwhite.png" />
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="./include/jquery/jquery-1.8.0.min.js"></script>
@@ -44,6 +44,9 @@
 	<![endif]-->
 
 	<!-- <link rel="stylesheet" type="text/css" href="./include/blueimp/css/style-1.css" /> -->
+
+	<!-- icon -->
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
 	<link rel="stylesheet" type="text/css" href="./include/blueimp/css/swiper-bundle.min.css" />
 	
