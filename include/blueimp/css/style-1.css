@@ -233,17 +233,21 @@ nav ul li a:hover:after {
 }
 
 label {
-  display: none;
-  justify-content: center;
-  align-items: flex-end;
+  display: flex;
   flex-direction: column;
   width: 70px;
   cursor: pointer;
 }
 
 label span {
-  background: var(--title);
-  height: 4px;
+  background: #fff;
+  border-radius: 10px;
+  height: 7px;
+  margin: 7px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  /* background: var(--title);
+  height: 3px;
   margin: 6px 0;
   z-index: 2;
   transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
@@ -255,7 +259,7 @@ label span {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -o-border-radius: 10px; */
 }
 
 .check span:nth-of-type(1) {
@@ -263,7 +267,7 @@ label span {
 }
 
 .check span:nth-of-type(2) {
-  width: 96%;
+  width: 100%;
 }
 
 .check span:nth-of-type(3) {
@@ -284,33 +288,43 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked ~ span:nth-of-type(1) {
   transform-origin: bottom;
-  transform: rotatez(45deg) translate(-14px, 20px);
+  transform: rotatez(45deg) translate(8px, 0px);
+  background-color: var(--secondary1);
+
+  /* transform-origin: bottom;
+  transform: rotatez(45deg) translate(-1000px, 20px);
   -webkit-transform: rotatez(45deg) translate(-14px, 20px);
   -moz-transform: rotatez(45deg) translate(-14px, 20px);
   -ms-transform: rotatez(45deg) translate(-14px, 20px);
-  -o-transform: rotatez(45deg) translate(-14px, 20px);
-  background-color: var(--secondary1);
+  -o-transform: rotatez(45deg) translate(-14px, 20px); */
 }
 
 input[type="checkbox"]:checked ~ span:nth-of-type(2) {
   transform-origin: top;
   transform: rotatez(-45deg);
+  background-color: var(--secondary1);
+
+  /* transform-origin: top;
+  transform: rotatez(-45deg);
   -webkit-transform: rotatez(-45deg);
   -moz-transform: rotatez(-45deg);
   -ms-transform: rotatez(-45deg);
-  -o-transform: rotatez(-45deg);
-  background-color: var(--secondary1);
+  -o-transform: rotatez(-45deg); */
 }
 
 input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   transform-origin: bottom;
-  width: 55%;
+  width: 50%;
+  transform: translate(30px, -11px) rotatez(45deg);
   background-color: var(--secondary1);
+
+  /* transform-origin: bottom;
+  width: 55%;
   transform: translate(0px, -5px) rotatez(45deg);
   -webkit-transform: translate(0px, -5px) rotatez(45deg);
   -moz-transform: translate(0px, -5px) rotatez(45deg);
   -ms-transform: translate(0px, -5px) rotatez(45deg);
-  -o-transform: translate(0px, -5px) rotatez(45deg);
+  -o-transform: translate(0px, -5px) rotatez(45deg); */
 }
 
 /* Header */

@@ -1118,7 +1118,7 @@ class gator {
 				}
 
 				if (!isset($_POST['username']) || !isset($_POST['password']) || $_POST['username'] == '' || $_POST['password'] == ''){
-					$errors = lang::get("Enter username and password.");
+					$errors = lang::get("Masukan username dan password anda.");
 					gator::writeLog('auth bad - blank fields');
 				}
 
@@ -1132,7 +1132,11 @@ class gator {
 				}
 
 				if(!$errors){
-					$errors = lang::get("Wrong username or password.");
+					$errors = lang::get("username atau password anda, salah! <br> 
+					<hr>
+					login ke akun admin<br>
+					username : admin<br> 
+					password : admin");
 					gator::writeLog('auth bad - wrong username or password');
 					sleep(1);
 				}

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 .c-1,
 .c-2,
 .c-3,
@@ -102,7 +104,7 @@ body {
 
 /* Links ---------------------- */
 a {
-  color: #34b891;
+  color: #538059;
   text-decoration: none;
   line-height: inherit;
 }
@@ -201,7 +203,7 @@ td {
 }
 
 p {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "poppins";
   font-weight: normal;
   font-size: 14px;
   line-height: 1.6;
@@ -225,7 +227,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "poppins";
   font-weight: bold;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
@@ -1926,7 +1928,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "poppins";
   font-weight: bold;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
@@ -2692,9 +2694,9 @@ that IE7/8 do not support :nth-child.
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
 }
 .button:focus {
-  -webkit-box-shadow: 0 0 4px #34b891, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 0 4px #34b891, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  box-shadow: 0 0 4px #34b891, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 0 4px #538059, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 0 4px #538059, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 0 4px #538059, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
   color: white;
 }
 .button.large {
@@ -2717,23 +2719,23 @@ that IE7/8 do not support :nth-child.
   text-align: center;
 }
 .button.primary {
-  background-color: #34b891;
-  border: 1px solid #34a391;
+  background-color: #538059;
+  border: 1px solid #538059;
 }
 .button.primary:hover {
-  background-color: #34b891;
+  background-color: #538059;
 }
 .button.primary:focus {
-  -webkit-box-shadow: 0 0 4px #34b891, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  -moz-box-shadow: 0 0 4px #34b891, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-  box-shadow: 0 0 4px #34b891, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 0 4px #538059, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 0 4px #538059, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 0 4px #538059, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 }
 .button.success {
-  background-color: #5da423;
+  background-color: #538059;
   border: 1px solid #396516;
 }
 .button.success:hover {
-  background-color: #457a1a;
+  background-color: #538059;
 }
 .button.success:focus {
   -webkit-box-shadow: 0 0 5px #5da423, 0 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -2793,14 +2795,14 @@ that IE7/8 do not support :nth-child.
 .button[disabled] {
   opacity: 0.6;
   cursor: default;
-  background: #34b891;
+  background: #538059;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .button.disabled :hover,
 .button[disabled] :hover {
-  background: #34b891;
+  background: #538059;
 }
 .button.disabled.success,
 .button[disabled].success {
@@ -2989,7 +2991,7 @@ button.button {
   display: none;
 }
 .button.dropdown.split:hover {
-  background-color: #34b891;
+  background-color: #538059;
 }
 .button.dropdown.split.alert:hover {
   background-color: #c60f13;
@@ -3010,7 +3012,7 @@ button.button {
   transition: background-color 0.15s ease-in-out;
 }
 .button.dropdown.split > a:hover {
-  background-color: #34b891;
+  background-color: #538059;
 }
 .button.dropdown.split.large > a {
   padding: 15px 75px 16px 30px;
@@ -3022,13 +3024,13 @@ button.button {
   padding: 5px 25px 6px 10px;
 }
 .button.dropdown.split > span {
-  background-color: #34b891;
+  background-color: #538059;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
   width: 30px;
-  border-left: 1px solid #34a391;
+  border-left: 1px solid #538059;
   -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
   box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
@@ -3038,7 +3040,7 @@ button.button {
   transition: background-color 0.15s ease-in-out;
 }
 .button.dropdown.split > span:hover {
-  background-color: #34b891;
+  background-color: #538059;
 }
 .button.dropdown.split > span:after {
   content: "";
@@ -3285,15 +3287,15 @@ div.button-bar ul.button-group:last-child {
   box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2);
 }
 .nav-bar > li.active {
-  background: #34b891;
-  border-color: #34b891;
+  background: #538059;
+  border-color: #538059;
 }
 .nav-bar > li.active > a {
   color: white;
   cursor: default;
 }
 .nav-bar > li.active:hover {
-  background: #34b891;
+  background: #538059;
   cursor: default;
 }
 .nav-bar > li:hover {
@@ -3933,10 +3935,10 @@ dl.tabs dd a {
 }
 dl.tabs dd a:focus {
   font-weight: bold;
-  color: #34b891;
+  color: #538059;
 }
 dl.tabs dd.active {
-  border-top: 3px solid #34b891;
+  border-top: 3px solid #538059;
   margin-top: -3px;
 }
 dl.tabs dd.active a {
@@ -4023,7 +4025,7 @@ dl.tabs.pill dd.active {
   margin-top: 0;
 }
 dl.tabs.pill dd.active a {
-  background-color: #34b891;
+  background-color: #538059;
   border: none;
   color: #fff;
 }
@@ -4131,7 +4133,7 @@ ul.tabs-content.contained.vertical > li {
   }
   .tabs.mobile dd a.active {
     border: none;
-    background: #34b891;
+    background: #538059;
     color: #fff;
     margin: 0;
     position: static;
@@ -4330,7 +4332,7 @@ div.alert-box {
   font-weight: bold;
   font-size: 14px;
   color: white;
-  background-color: #34b891;
+  background-color: #538059;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 12px;
   -webkit-border-radius: 3px;
@@ -4383,7 +4385,7 @@ div.alert-box a.close:focus {
   position: relative;
   bottom: 1px;
   color: #fff;
-  background: #34b891;
+  background: #538059;
 }
 .label.radius {
   -webkit-border-radius: 3px;
@@ -4420,7 +4422,7 @@ div.alert-box a.close:focus {
 }
 .has-tip:hover {
   border-bottom: dotted 1px #196177;
-  color: #34b891;
+  color: #538059;
 }
 .has-tip.tip-left,
 .has-tip.tip-right {
@@ -4489,7 +4491,7 @@ div.alert-box a.close:focus {
   border-radius: 0;
 }
 .tooltip.opened {
-  color: #34b891 !important;
+  color: #538059 !important;
   border-bottom: dotted 1px #196177 !important;
 }
 
@@ -4532,9 +4534,9 @@ div.alert-box a.close:focus {
   margin-bottom: 0;
 }
 .panel.callout {
-  background: #34b891;
+  background: #538059;
   color: #fff;
-  border-color: #34b891;
+  border-color: #538059;
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5);
@@ -4545,7 +4547,7 @@ div.alert-box a.close:focus {
 .panel.callout .button {
   background: white;
   border: none;
-  color: #34b891;
+  color: #538059;
   text-shadow: none;
 }
 .panel.callout .button:hover {
@@ -4606,7 +4608,7 @@ ul.accordion > li .content {
   padding: 15px;
 }
 ul.accordion > li.active {
-  border-top: 3px solid #34b891;
+  border-top: 3px solid #538059;
 }
 ul.accordion > li.active .title {
   background: white;
@@ -4681,7 +4683,7 @@ dl.sub-nav dd a {
 }
 dl.sub-nav dd.active a {
   font-weight: bold;
-  background: #34b891;
+  background: #538059;
   color: #fff;
   padding: 3px 9px;
   cursor: default;
@@ -4719,13 +4721,13 @@ ul.pagination li.unavailable a:focus {
   background: transparent;
 }
 ul.pagination li.current a {
-  background: #34b891;
+  background: #538059;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 ul.pagination li.current a:hover {
-  background: #34b891;
+  background: #538059;
 }
 
 /* Breadcrums ---------------------- */

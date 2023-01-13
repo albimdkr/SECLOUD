@@ -1,7 +1,5 @@
 <body class="main">
 
-
-
 <!-- prepare upload templates -->
 <script id="template-upload">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
@@ -36,44 +34,39 @@
 
 
 <?php if(gatorconf::get('use_auth') == true && gatorconf::get('show_top_auth_bar') == true && $_SESSION['simple_auth']['username'] != 'guest'):?>
-<div class="top-menu">
+<!-- <div class="top-menu">
 <div class="row">
-<a class="version-info"><?php echo lang::get("FileGator")?></a>
-
-
-
-
-
-
- <?php if(gatorconf::get('allow_change_password')):?>
- 	<a class="username-edit"><?php echo $_SESSION['simple_auth']['username']?></a>
- <?php else:?>
-	 <?php echo $_SESSION['simple_auth']['username']?>
- <?php endif;?>
- | <a href="?logout=1"><?php echo lang::get("Sign Out")?></a>
-</div>
+  
+  </div>
 </div>
 <div class="top-menu-spacer">
-    <nav>
-      <a href="#header" class="logo"> <img src="./asset/img/sttbwhite.png" alt="logo" class="logo" /></a>
-      <ul>
-        <li><a class="btn active" href="#tentang">Generator</a></li>
-        <li><a href="#anggota">Anggota</a></li>
-        <li><a href="#alur">Cloud</a></li>
-      </ul>
-      <label for="check" class="check">
-        <input type="checkbox" id="check" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </nav>
-</div>
+  </div> -->
+  <nav>
+    <a href="#header" class="logo">CLOUD.</a>
+    <div class="nav-username-signout">
+      <?php if(gatorconf::get('allow_change_password')):?>
+        <li><a class="username-edit"><?php echo $_SESSION['simple_auth']['username']?></a></li>
+      <?php else:?>
+        <?php echo $_SESSION['simple_auth']['username']?>
+      <?php endif;?>
+      <li><a href="?logout=1"><?php echo lang::get("Sign Out")?></a></li>
+    </div>
+    <ul>
+      <li><a class="btn active" href="#logo">Generator</a></li>
+      <li><a href="#anggota">Anggota</a></li>
+      <li><a href="#cloud">Cloud</a></li>
+    </ul>
+    <label for="check" class="check">
+      <input type="checkbox" id="check" class="check-nav" />
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </nav>
 <?php endif;?>
 
 <div id="wrapper" class="row">
 <div class="container twelve columns">
-<div id="topcorners"></div>
 <div id="content">
 
 <?php if(gatorconf::get('use_auth') == true && gatorconf::get('show_top_auth_bar') == false && $_SESSION['simple_auth']['username'] != 'guest'):?>
@@ -97,8 +90,14 @@
 </div>
 <?php endif;?>
 
-<div id="logo">
-<a href="<?php echo gatorconf::get('base_url')?>/?cd="><img alt="filegator" src="./include/views/img/logo.gif"></a>
+<div id="logo" class="title-sistem">
+  <div class="sub-title-sistem sub">
+    <h2>CLOUD COMPUTING</h2>
+    <h4>upload and download your files.</h4>
+  </div>
+  <div class="icon-title-sistem icon">
+    <i class='bx bx-cloud sm-item'></i>
+  </div>
 </div>
 
 <div class="fileupload-container navigation-button">
@@ -226,7 +225,7 @@
 </form>
 </div> <!-- end browse-panel -->
 </div>
-<div id="bottomcorners"></div>
+<!-- <div id="bottomcorners"></div> -->
 </div>
 </div>
 
@@ -250,7 +249,7 @@
             <!-- <p>very exellent, the service its so fast, fun and good for customer. You must try.</p> -->
             <i class="bx bxs-quote-alt-left quote-icon"></i>
             <div class="details">
-              <span class="name">Annisa Qolbiah</span>
+              <span class="name">Anisa Qolbiah</span>
               <span class="job">Backend Developer</span>
             </div>
           </div>
@@ -268,12 +267,12 @@
             <!-- <p>good and very fast the respon</p> -->
             <i class="bx bxs-quote-alt-left quote-icon"></i>
             <div class="details">
-              <span class="name">Dea</span>
+              <span class="name">Dea Meilani</span>
               <span class="job">Report Documentation</span>
             </div>
           </div>
           <div class="slide swiper-slide">
-            <img src="./include/views/img/client1.png" alt="" class="img-client" />
+            <img src="./include/views/img/adrian.png" alt="" class="img-client" />
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quas, cupiditate similique veniam quaerat incidunt doloribus! Magnam ab et labore.</p> -->
             <i class="bx bxs-quote-alt-left quote-icon"></i>
             <div class="details">
@@ -293,14 +292,50 @@
 
 
     <!-- Cloud -->
-    <section class="container-socialmedia" id="alur">
-      <h2 class="socialmedia-title">CLOUD PROVIDER</h2>
+    <section class="container-socialmedia" id="cloud">
+      <h2 class="socialmedia-title">CLOUD SERVICE PROVIDER</h2>
       <div class="social-media">
         <img src="./include/views/img/alibaba-cloud.png" alt="alibaba cloud">
       </div>
     </section>
     <!-- Cloud -->
 
+
+    <footer class="container-footer" id="footer">
+      <div class="footer-heading">
+        <div class="item-footer">
+          <h5 class="title-footer">Login</h5>
+          <li><a href="#login">Generator</a></li>
+          <li><a href="#login">Anggota</a></li>
+          <li><a href="#tentang">Cloud Provider</a></li>
+        </div>
+        <div class="item-footer">
+          <h5 class="title-footer">Source Code</h5>
+          <div class="container-icon">
+            <li>
+              <a href="" target="_blank"><i class="bx bxl-dropbox footer-icon"></i></a>
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="bx bxl-github footer-icon"></i></a>
+            </li>
+            <li>
+              <a href="" target="_blank"><i class="bx bxl-gitlab footer-icon"></i></a>
+            </li>
+          </div>
+        </div>
+        <div class="item-footer">
+          <h5 class="title-footer">Kampus</h5>
+          <a href="https://goo.gl/maps/tGChb5k4qodhyzSk7" target="_blank" class="alamat">Sekolah Tinggi Teknologi Bandung</a>
+          <!-- <img src="./include/views/img/sttbwhite.png" alt=""> -->
+        </div>
+      </div>
+    </footer>
+    <p class="developer">MADE WITH<i class="bx bxs-heart icon-heart"></i> BY KELOMPOK 8 TIF RP 21 C</p>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#538059" fill-opacity="1" d="M0,64L40,74.7C80,85,160,107,240,106.7C320,107,400,85,480,101.3C560,117,640,171,720,186.7C800,203,880,181,960,144C1040,107,1120,53,1200,32C1280,11,1360,21,1400,26.7L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
     <!-- Javascript -->
     <script>
       // Swipper
@@ -317,5 +352,13 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+
+      // Navbar mobile slider
+      const menuToggle = document.querySelector(".check");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
       });
     </script>

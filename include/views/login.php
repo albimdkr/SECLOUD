@@ -1,15 +1,21 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#538059" fill-opacity="1" d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,197.3C672,171,768,85,864,80C960,75,1056,149,1152,186.7C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> -->
 
 <body class="login">
 <div id="wrapper">
 <div id="header">
 </div>
 
+
 <div class="container">
-<div id="topcorners"></div>
+<!-- <div id="topcorners"></div> -->
 
 <div id="content" class="login">
-<div id="logo">
-<a href="<?php echo gatorconf::get('base_url')?>"><img alt="filegator" src="./include/views/img/logo.gif"></a>
+<div id="logo" class="title-login">
+<!-- <i class='bx bxs-cloud sm-item'></i> -->
+<i class='bx bx-cloud sm-item'></i>
+	<!-- <h2>LOGIN CLOUD</h2> -->
+	<h5>LOGIN CLOUD</h5>
+	<h6>BY KELOMPOK 8 | TIF RP 21 C</h6>
 </div>
 
 <?php if (isset($params['errors'])):?>
@@ -34,23 +40,21 @@
 
 <div>
 <input type="hidden" name="submit" value="ie_enter_fix">
-<input class="nice radius button" type="Submit" name="submit" value="<?php echo lang::get("Sign In")?>">
+<input class="nice radius button" type="Submit" name="submit" value="<?php echo lang::get("Masuk")?>">
 
 <?php if (gatorconf::get('allow_signup')):?>
 <input class="nice radius secondary button" style="float:left;" type="Submit" value="<?php echo lang::get("Sign up")?>" onclick="window.location='<?php echo gatorconf::get('base_url')?>/?signup=1&'; return false;"> 
 <?php endif;?>
-
-
-
 </div>
+
 
 </form>
+</div>
 
+<!-- <div id="bottomcorners"></div> -->
+</div>
+</div>
 
-</div>
-<div id="bottomcorners"></div>
-</div>
-</div>
 
 <?php if (gatorconf::get('enable_password_recovery')):?>
 <div id="modal" class="reveal-modal"></div>
@@ -119,10 +123,10 @@ $(document).ready(function() {
     });
 
     $('#email-button').click(function(){
-
-		
     });
 });    
 //]]>
 </script>
 <?php endif;?>
+
+    </svg>
